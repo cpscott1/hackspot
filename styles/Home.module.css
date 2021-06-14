@@ -35,7 +35,7 @@
 }
 
 .logo img {
-  width: 150px;
+  width: 250px;
 }
 
 .links {
@@ -60,7 +60,13 @@
   color: #fff;
   background: #ddf4ff;
   width: 100%;
-  height: 400px;
+  height: 200px;
+}
+
+@media only screen and (min-width: 601px) {
+  .hero {
+    height: 400px;
+  }
 }
 
 .heroCont {
@@ -75,19 +81,31 @@
 .head1 {
   text-transform: uppercase;
   color: #282828;
-  font-size: 1vw;
+  font-size: 4vw;
   font-weight: 400;
   margin: 0;
 }
 
+@media only screen and (min-width: 992px) {
+  .head1 {
+    font-size: 1vw;
+  }
+}
+
 .head2 {
-  font-size: 2vw;
+  font-size: 5vw;
   color: #282828;
   text-align: center;
 }
 
+@media only screen and (min-width: 992px) {
+  .head2 {
+    font-size: 2vw;
+  }
+}
+
 .signUpButton {
-  padding: 15px 40px;
+  padding: 10px 30px;
   background: #282828;
   border: none;
   cursor: pointer;
@@ -95,11 +113,37 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@media only screen and (min-width: 601px) {
+  .signUpButton {
+    padding: 15px 40px;
+    background: #282828;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
 .showDetails {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 75%;
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width: 601px) {
+  .showDetails {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .showDetails {
+    width: 50%;
+  }
 }
 
 .showDetailsGrid {
@@ -110,23 +154,57 @@
 }
 
 .showDetailsTitle {
-  font-size: 2vw;
+  font-size: 5vw;
   color: #003970;
   margin: 0;
 }
 
+@media only screen and (min-width: 992px) {
+  .showDetailsTitle {
+    font-size: 2vw;
+    color: #003970;
+    margin: 0;
+  }
+}
+
 .showDetailsText {
-  font-size: 1vw;
+  font-size: 4vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .showDetailsText {
+    font-size: 1vw;
+  }
 }
 
 .about {
-  width: 50%;
+  width: 75%;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 601px) {
+  .about {
+    padding-bottom: 0;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about {
+    width: 50%;
+  }
 }
 
 .aboutGrid {
   display: grid;
   justify-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 601px) {
+  .aboutGrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .aboutTextCont {
@@ -135,48 +213,109 @@
   align-items: center;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 601px) {
+  padding-bottom: 0;
 }
 
 .aboutTextCont p {
   margin-left: 0.5vw;
-  font-size: 1vw;
+  font-size: 4vw;
+  line-height: 1.5em;
+}
+
+@media only screen and (min-width: 601px) {
+  .aboutTextCont p {
+    margin-left: 0.5vw;
+    font-size: 1vw;
+    line-height: 1.5em;
+  }
 }
 
 .aboutGrid h2 {
-  font-size: 2vw;
+  font-size: 6vw;
   color: #003970;
   margin: 0;
 }
 
+@media only screen and (min-width: 601px) {
+  .aboutGrid h2 {
+    font-size: 2vw;
+    color: #003970;
+    margin: 0;
+  }
+}
+
 .contactForm {
-  width: 25%;
+  width: 50%;
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width: 992px) {
+  .contactForm {
+    width: 25%;
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 .text {
   color: #003970;
   text-align: center;
-  font-size: 2vw;
+  font-size: 6vw;
+}
+
+@media only screen and (min-width: 601px) {
+  .text {
+    color: #003970;
+    text-align: center;
+    font-size: 2vw;
+  }
 }
 
 .formData input {
   animation: fadeIn ease;
   background: #fff;
-  font-size: 1vw;
+  font-size: 4vw;
   width: 100%;
   border: none;
-  border-bottom: 0.15vw solid black;
-  padding: 1vw;
+  border-bottom: 0.5vw solid black;
+  padding: 3vw;
   outline: none;
+}
+
+@media only screen and (min-width: 601px) {
+  .formData input {
+    animation: fadeIn ease;
+    background: #fff;
+    font-size: 1vw;
+    width: 100%;
+    border: none;
+    border-bottom: 0.15vw solid black;
+    padding: 1vw;
+    outline: none;
+  }
 }
 
 .formData textarea {
   width: 100%;
-  border: 0.15vw solid black;
-  font-size: 1vw;
-  padding: 1vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  border: 0.5vw solid black;
+  font-size: 4vw;
+  padding: 3vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+@media only screen and (min-width: 601px) {
+  .formData textarea {
+    width: 100%;
+    border: 0.15vw solid black;
+    font-size: 1vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
 }
 
 .buttonContainer {
@@ -184,11 +323,21 @@
 }
 
 .button {
-  padding: 15px 40px;
+  padding: 10px 30px;
   border: none;
   background: black;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width: 601px) {
+  .button {
+    padding: 15px 40px;
+    border: none;
+    background: black;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 .main {
@@ -208,6 +357,22 @@
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+}
+
+.footer span {
+  font-size: 3vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer span {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .footer span {
+    font-size: 1vw;
+  }
 }
 
 .footer a {
