@@ -100,7 +100,7 @@ export default function Menu({ state, setState }) {
             }}
             onClick={onClick}
           >
-            <CustomLink name="About" path="/about" />
+            <CustomLink name="About" path="#about" />
           </li>
           <li
             className={styles.menu__container__links_item}
@@ -109,7 +109,7 @@ export default function Menu({ state, setState }) {
             }}
             onClick={onClick}
           >
-            <CustomLink name="Contact" path="/contact" />
+            <CustomLink name="Contact" path="#contact" />
           </li>
         </ul>
       </div>

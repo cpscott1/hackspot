@@ -42,7 +42,7 @@ export default function Home() {
         <div className={styles.heroCont}>
           <p className={styles.head1}>It's time to do it. Beautifully.</p>
           <h2 className={styles.head2}>Don't cry because it's over, Smile <br />because it happened.</h2>
-          <div className={styles.signUpCont}><button className={styles.signUpButton}>Sign Up</button></div>
+          <div className={styles.signUpCont}><button className={styles.signUpButton}><a href="https://forms.gle/nKnhn55Gcxv6RdTp9">Sign Up</a></button></div>
         </div>
       </section>
       <section className={styles.showDetails}>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.about}>
+      <section className={styles.about} id="about">
         <div className={styles.aboutGrid}>
           <div className={styles.aboutTextCont}>
             <h2>Real Devs. Real Stories.</h2>
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
       <section className={styles.contactForm}>
       <h2 className={styles.text}>Get in Touch</h2>
-      <form className={styles.formData} name='contact' method='POST' data-netlify='true'>
+      <form className={styles.formData} id="contact" name='contact' method='POST' data-netlify='true'>
         <input type='hidden' name='contact-form' value='contact' />
         <div>
           <input style={{ animationDuration: '1s' }} type='text' name='name' placeholder="name" />
