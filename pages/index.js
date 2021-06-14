@@ -1,8 +1,16 @@
+import React, { useState } from "react";
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Header from "../components/header/Header";
+import Menu from "../components/menu/Menu";
+import gsap from "gsap";
 
 export default function Home() {
+
+  const [state, setState] = useState({
+    active: false,
+  });
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +21,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <header className={styles.header}>
+      {/* <header className={styles.header}>
         <div className={styles.headerGrid}>
           <div className={styles.logo}>
             <a><img src="/images/Hackspot2.png" /></a>
@@ -26,7 +34,10 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </header>
+      </header> */}
+      <Menu state={state} setState={setState} />
+
+      <Header state={state} setState={setState} />
       <section className={styles.hero}>
         <div className={styles.heroCont}>
           <p className={styles.head1}>It's time to do it. Beautifully.</p>
