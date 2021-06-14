@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./menu.module.scss";
 import Link from "next/link";
 import gsap, { Power3 } from "gsap";
-import CustomLink from "../customlink/CustomLink";
+import CustomLink from "../customLink/CustomLink";
 
 export default function Menu({ state, setState }) {
   let menu = useRef(null);
