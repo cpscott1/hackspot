@@ -74,8 +74,8 @@ export default function Home() {
       </section>
       <section className={styles.contactForm}>
       <h2 className={styles.text}>Get in Touch</h2>
-      <form className={styles.formData} name='contact' method='POST' data-netlify-recaptcha="true" data-netlify='true'>
-        <input type='hidden' name='form-name' value='contact' />
+      <form className={styles.formData} name='contact' method='POST' data-netlify='true'>
+        <input type='hidden' name='contact-form' value='contact' />
         <div>
           <input style={{ animationDuration: '1s' }} type='text' name='name' placeholder="name" />
         </div>
