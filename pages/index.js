@@ -65,7 +65,7 @@ export default function Home() {
         <div className={styles.aboutGrid}>
           <div className={styles.aboutTextCont}>
             <h2>Real Devs. Real Stories.</h2>
-            <p>We wanted to create a competition with a personal touch. Not often you get to see the developer journey from the early stages and with that in mind we wanted to showcase some of the best local talent in the great state of Oklahoma. You will grow to love every single compeititor as they compete for the grand prize. </p>
+            <p>We wanted to create a competition with a personal touch. Not often you get to see the developer journey from the early stages and with that in mind we wanted to showcase some of the best talent all over the world. You will grow to love every single compeititor as they compete for the grand prize. </p>
           </div>
           <div>
             <Image src="/images/Programming.svg" width={600} height={500} />
