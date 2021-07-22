@@ -177,6 +177,46 @@
   }
 }
 
+.videoSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .videoSection {
+    width: 560px;
+    height: 515px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .videoSection h2 {
+    margin-top: 0;
+  }
+}
+
+.hackspotTitle {
+  font-size: 6vw;
+  color: #003970;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .hackspotTitle {
+    font-size: 2vw;
+  }
+}
+
+.hackspotVid {
+  margin-bottom: 100px;
+  width: 90%;
+}
+
 .about {
   width: 75%;
   padding-bottom: 50px;

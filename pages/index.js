@@ -61,6 +61,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className={styles.videoSection}>
+        <h2 className={styles.hackspotTitle}>What is Hackspot</h2>
+        <iframe className={styles.hackspotVid} width="560" height="315" src="https://www.youtube.com/embed/fF4qWZ7jeeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
       <section className={styles.about} id="about">
         <div className={styles.aboutGrid}>
           <div className={styles.aboutTextCont}>
